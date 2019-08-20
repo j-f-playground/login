@@ -13,7 +13,8 @@ class Login extends Component {
           <Input />
           <Text text={'PassWord'} styleText={styles.titlesText} />
           <Input />
-          <Button text={'Sign In'} styleButton={styles.styleButton} styleText={styles.buttonText} />
+          <Button text={'Sign In'} styleButton={styles.styleSignIn} styleText={styles.buttonTextSignIn} />
+          <Button text={'Forgot Password?'} styleButton={styles.styleForgotPass} styleText={styles.buttonTextForgotPass} />
         </div>
       </div>
     );

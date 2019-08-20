@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { string } from 'prop-types';
 import Text from '../Text/';
-import styles from './styles.module.scss';
 
 class Login extends Component {
   static propTypes = {
@@ -17,13 +16,13 @@ class Login extends Component {
   };
 
   render() {
-    const { styleButton, styleText } = this.props;
+    const { styleButton, styleText, text } = this.props;
     return (
       <button
         type="button"
         className={styleButton}
       >
-        <Text text={'Sign In'} styleText={styleText} />
+        <Text text={text} styleText={styleText} />
       </button>
     );
   }
