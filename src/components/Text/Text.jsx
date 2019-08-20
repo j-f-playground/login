@@ -11,8 +11,8 @@ class Login extends Component {
   static defaultProps = {
     text: undefined,
     styleText: undefined,
-
   };
+  
   render() {
     const { text, styleText } = this.props;
     return (
