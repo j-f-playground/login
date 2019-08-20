@@ -8,13 +8,17 @@ class Login extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <div className={styles.login}>
-          <Text text={'Username'} styleText={styles.titlesText} />
-          <Input />
-          <Text text={'PassWord'} styleText={styles.titlesText} />
-          <Input />
-          <Button text={'Sign In'} styleButton={styles.styleSignIn} styleText={styles.buttonTextSignIn} />
-          <Button text={'Forgot Password?'} styleButton={styles.styleForgotPass} styleText={styles.buttonTextForgotPass} />
+        <div className={styles.loginContainer}>
+          <div className={styles.login}>
+            <Text text={'Username'} styleText={styles.titlesText} />
+            <Input />
+            <Text text={'PassWord'} styleText={styles.titlesText} />
+            <Input />
+            <Button text={'Sign In'} styleButton={styles.styleSignIn} styleText={styles.buttonTextSignIn} />
+            </div>
+            <div className={styles.forgotPass}>
+              <Button text={'Forgot Password?'} styleButton={styles.styleForgotPass} styleText={styles.buttonTextForgotPass} />
+            </div>
         </div>
       </div>
     );
