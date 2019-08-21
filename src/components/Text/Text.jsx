@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 import { string } from 'prop-types';
-//import styles from './styles.module.scss';
+import styles from './styles.module.scss';
 
-class Login extends Component {
+class Text extends Component {
   static propTypes = {
-    text: string,
-    styleText: string,
+    text: string.isRequired,
+    textType: string,
   };
 
   static defaultProps = {
-    text: undefined,
-    styleText: undefined,
+    textType: undefined,
   };
-  
+
   render() {
-    const { text, styleText } = this.props;
+    const { text, textType } = this.props;
     return (
-      <div className={styleText}>
+      <div className={`${styles.text} ${textType === 'grey' ? styles.grey : styles.white}`}
+>
         {text}
       </div>
     );
   }
 }
 
-export default Login;
+export default Text;

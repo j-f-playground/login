@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './styles.module.scss';
 
-class Login extends Component {
+class Input extends Component {
   render() {
     return (
       <input className={styles.input} />
@@ -9,4 +9,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Input;

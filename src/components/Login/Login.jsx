@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Text from '../Text/';
-import Input from '../Input/';
-import Button from '../Button/';
+import Text from 'components/Text/';
+import Input from 'components/Input/';
+import Button from 'components/Button/';
 import styles from './styles.module.scss';
 
 class Login extends Component {
@@ -10,14 +10,14 @@ class Login extends Component {
       <div className={styles.container}>
         <div className={styles.loginContainer}>
           <div className={styles.login}>
-            <Text text={'Username'} styleText={styles.titlesText} />
+            <Text text={'Username'} textType='grey' />
             <Input />
-            <Text text={'PassWord'} styleText={styles.titlesText} />
+            <Text text={'PassWord'} textType='grey' />
             <Input />
-            <Button text={'Sign In'} styleButton={styles.styleSignIn} styleText={styles.buttonTextSignIn} />
+            <Button text={'Sign In'} type='green' textType='white-' />
             </div>
             <div className={styles.forgotPass}>
-              <Button text={'Forgot Password?'} styleButton={styles.styleForgotPass} styleText={styles.buttonTextForgotPass} />
+              <Button text={'Forgot Password?'} type='white' textType='grey' />
             </div>
         </div>
       </div>

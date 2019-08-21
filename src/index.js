@@ -1,4 +1,4 @@
-import Home from 'pages/Home';
+import Home from 'components/Login';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'styles/index.scss';
