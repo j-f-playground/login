@@ -7,8 +7,9 @@
   .loginContainer {
     background-color: $color1;
     margin: auto;
-    width: 350px;
-    height: 300px;
+    min-width: 300px;
+    max-width: 350px;
+    height: 286px;
     border-radius: 4px;
     position: absolute;
     top: 0;
@@ -18,9 +19,23 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    .image {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: -50px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
   
   .login {
-    padding: 30px;
+    padding: 30px 30px 20px 30px;
     height: 236px;
     display: flex;
     justify-content: space-between;
@@ -31,6 +46,14 @@
       font-weight: bold;
       font-size: 14px;
     }
+  }
+
+  .newAccountText {
+    position: absolute;
+    bottom: -36px;
+    text-align: center;
+    right: 0;
+    left: 0;
   }
 }
 
