@@ -18,11 +18,11 @@ class Button extends Component {
   };
 
   render() {
-    const { text, type, textType } = this.props;
+    const { text, type, textType, styleButton } = this.props;
     return (
       <button
         type="button"
-        className={`${styles.button} ${type === 'green' ? styles.green : styles.white}`}
+        className={`${styles.button} ${styleButton} ${type === 'green' ? styles.green : styles.white}`}
       >
         <Text text={text} textType={textType} />
       </button>

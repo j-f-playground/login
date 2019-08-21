@@ -18,14 +18,14 @@ class Login extends Component {
             <Input />
             <Text text='PassWord' textType='grey' />
             <Input />
-            <Button text='Sign In' type='green' textType='white' />
-            </div>
-            <div className={styles.forgotPass}>
-              <Button text='Forgot Password?' type='white' textType='grey' />
-            </div>
-            <div className={styles.newAccountText}>
-              <Text text='Don’t have an account yet? Sign Up' textType='white' />
-            </div>
+            <Button text='Sign In' type='green' textType='white' styleButton={styles.singInButton} />
+          </div>
+          <div className={styles.forgotPass}>
+            <Button text='Forgot Password?' type='white' textType='grey'/>
+          </div>
+          <div className={styles.newAccountText}>
+            <Text text='Don’t have an account yet? Sign Up' textType='white' />
+          </div>
         </div>
       </div>
     );
