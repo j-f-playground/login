@@ -7,4 +7,8 @@
   border: solid 1px $color7;
   margin-top: 8px;
   margin-bottom: 12px;
+
+  &.inputError {
+    border: solid 3px $color9;
+  }
 }
