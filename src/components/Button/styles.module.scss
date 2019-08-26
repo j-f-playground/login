@@ -1,0 +1,25 @@
+@import '~styles/colors';
+
+.button {
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+}
+
+.green {
+  //background-image: linear-gradient(to bottom, $color6, $color5 98%);
+  background-color: $color5;
+  height: 36px;
+  border: solid 1px $color4;
+  &:hover {
+    background-color: $color10;
+  }
+}
+
+.white {
+  height: 49px;
+  background-color: $color1;
+  &:hover {
+    background-color: $color10;
+  }
+}
