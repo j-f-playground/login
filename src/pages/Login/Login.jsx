@@ -6,7 +6,6 @@ import Image from 'components/Image/';
 import styles from './styles.module.scss';
 import smile from './img/smile.png';
 
-
 class Login extends Component {
   constructor(props) {
     super(props);
