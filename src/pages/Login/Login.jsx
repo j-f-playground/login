@@ -29,29 +29,25 @@ class Login extends Component {
     if (this.state.email === 'logintest@jfplayground.com' && this.state.password === 'test') {
       url = 'https://httpstat.us/200';
     } else {
-      url = 'https://httpstat.us/503';
-      if (this.state.email !== 'logintest@jfplayground.com') {
-        this.setState({
-          ifErrorEmail: true,
-        })
-      } if (this.state.password !== 'test') {
-        this.setState({
-          ifErrorPass: true,
-        })
-      }
+      url = 'https://httpstat.us/400';
     }
 
     fetch(url)
-    .then(() => (
-      this.setState({
-        inputOk: false,
-      })
-    ))
-    .catch(() => (
-      this.setState({
-        inputOk: true,
-      })
-    ));
+    .then((response) => {
+      const { email, password } = this.state;
+
+      if (response.status === 200) {
+        this.setState({
+          inputOk: false,
+        });
+      } else {
+        this.setState({
+          inputOk: true,
+          ifErrorEmail: email !== 'logintest@jfplayground.com',
+          ifErrorPass: password !== 'test',
+        });
+      }
+    });
   };
 
   render() {
